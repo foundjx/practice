@@ -1,0 +1,33 @@
+[
+	{
+		"src": "img/movie1.jpg",
+		"name" : "360行车记录仪 G300P",
+		"price" : "449.00"
+	},
+	{
+		"src": "img/movie2.jpg",
+		"name" : "360行车记录仪后视镜版 M302",
+		"price" : "暂无报价"
+	},
+	{
+		"src": "img/movie3.jpg",
+		"name" : "360行车记录仪二代 美猴王版",
+		"price" : "549.00"
+	},
+	{
+		"src": "img/movie4.jpg",
+		"name" : "智能后视镜导航云镜 S650",
+		"price" : "769.00"
+	},
+	{
+		"src": "img/movie5.jpg",
+		"name" : "行车记录仪尊享升级版",
+		"price" : "329.00"
+	},
+	{
+		"src": "img/movie6.jpg",
+		"name" : "360无线测速电子狗 G300",
+		"price" : "339.00"
+	}
+]
+

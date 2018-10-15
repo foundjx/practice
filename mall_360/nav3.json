@@ -1,0 +1,33 @@
+[
+	{
+		"src": "img/w1.jpg",
+		"name" : "360儿童手表SE 3代 天空蓝",
+		"price" : "169.00"
+	},
+	{
+		"src": "img/w2.jpg",
+		"name" : "360儿童手表SE3 Plus 樱花粉",
+		"price" : "289.00"
+	},
+	{
+		"src": "img/w3.jpg",
+		"name" : "360儿童手表7C 天空蓝色",
+		"price" : "399.00"
+	},
+	{
+		"src": "img/w4.jpg",
+		"name" : "360儿童手表SE 2 Plus 珊瑚粉",
+		"price" : "299.00"
+	},
+	{
+		"src": "img/w5.jpg",
+		"name" : "360儿童手表6C 天空蓝",
+		"price" : "399.00"
+	},
+	{
+		"src": "img/w6.jpg",
+		"name" : "360手表X1 Pro 黑色",
+		"price" : "1399.00"
+	}
+]
+

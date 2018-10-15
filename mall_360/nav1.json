@@ -1,0 +1,32 @@
+[
+	{
+		"src": "img/p1.jpg",
+		"name" : "360手机 N7 Pro 珊瑚红",
+		"price" : "1799.00"
+	},
+	{
+		"src": "img/p2.jpg",
+		"name" : "360手机 N7 Pro 玛瑙黑",
+		"price" : "2099.00"
+	},
+	{
+		"src": "img/p3.jpg",
+		"name" : "360手机 N7 Lite 幻影黑",
+		"price" : "1199.00"
+	},
+	{
+		"src": "img/p4.jpg",
+		"name" : "360手机 N7 月岩白色",
+		"price" : "暂无报价"
+	},
+	{
+		"src": "img/p5.jpg",
+		"name" : "360手机 N7 石墨黑色",
+		"price" : "暂无报价"
+	},
+	{
+		"src": "img/p6.jpg",
+		"name" : "360手机 N6 璀璨金",
+		"price" : "1199.00"
+	}
+]
