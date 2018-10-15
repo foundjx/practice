@@ -2,8 +2,59 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>360商城-注册</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		
 	</head>
 	<body>
+		<div id="" class="re_header_wrap">
+			<div id="regiser_header">
+				<a href="#" class="img"><img src="img/uc-i360-logo.png"/></a>
+				<a href="#" class="btn1">注册账号</a>
+				<a href="#" class="btn2">登录</a>
+			</div>
+		</div>
+		<div id="re_form">
+			<h1>注册360账号</h1>
+			<form action="" method="post">
+				<div id="" class="xy_">
+					<span class="xy">请阅读并同意“用户协议”和“用户隐私政策”</span>
+				</div>
+				
+				<div class="input_tel all_">
+					<img class="pe" src="img/uc-account-icon.png"/>
+					<input type="text" name="tel" id="tel" placeholder="请输入要注册的手机号" maxlength="11" />
+					<span>手机号格式有误</span>
+				</div>
+				<div class="input_pwd all_">
+					<img class="pw" src="img/uc-password-icon.png"/>
+					<input type="password" name="pwd" id="pwd" placeholder="密码请设置8-20个字符" />
+					<span>至少包含数字/字母/字符两种组合 8-20位</span>
+				</div>
+				
+				<div id="" class="code_ all_">
+					<input type="text" name="code" id="code" placeholder="请输入验证码" />
+					<span class="err">验证码错误请重新输入</span>
+					<div class="yzm-spa"></div>
+				</div>
+				<input type="button" value="注 册" class="btn"/>
+				<div id="" class="agreen_">
+					<input type="checkbox" name="agreen" id="agreen" value="" />阅读并同意<a href="https://i.360.cn/reg/protocol">"360用户协议"</a>和<a href="https://i.360.cn/reg/privacy">"360用户隐私协议"</a>
+				</div>	
+			</form>
+		</div>
+		<div id="bottom">
+			<a href="http://i.360.cn/findpwd/customerhelper?sb_param=136c056e3d058d7eaf9d2457c6f931ec" class="help">帮助中心</a>
+			<a href="http://i.360.cn/complaint?sb_param=58deb45e2ad1f365a58bc5124cadb674" class="help np">立即申诉</a>
+			<p>Copyright©2005-2018 360.CN All Rights Reserved 360安全中心</p>
+			<a href="http://www.miibeian.gov.cn/?sb_param=b23be4ed27bed0c7763ba7e4a9ac2ad0">京ICP证080047号[京ICP备08010314号-6]</a>
+			<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000006&sb_param=93b9f8e9775ad410dd1aa478c34dfdcb" class="pl">
+				<img src="img/wangan-icon.png"/>
+				京公网安备 11000002000006号
+			</a>
+		</div>
 	</body>
 </html>
+<script src="js/jquery.min.js"></script>
+<script src="js/register.js"></script>
