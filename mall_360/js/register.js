@@ -25,54 +25,75 @@ $('#re_form form').find('input').blur(function(){
 })
 
 //表单验证
-$('#tel').blur(function(){
-	var re1=/^\d{11}$/;
+function tel(){
+	$('#tel').blur(function(){
+	var re1=/^1[3|5|7|8|]\d{9}$/;
 	if(!re1.test($(this).val()) && $(this).val()!=''){
 		$(this).next().css('display','block');
-		
+		$(this).next().html('手机号格式有误');
 	}
-})
-$('#tel').focus(function(){
-		$(this).next().css('display','none');
-})
+	})
+	$('#tel').focus(function(){
+			$(this).next().css('display','none');
+	})
+}
 
 
-$('#pwd').blur(function(){
+function pwd(){
+	$('#pwd').blur(function(){
 	var re2=/^(?![0-9]+$)(?![a-z]+$)(?![A-Z]+$)(?!([^(0-9a-zA-Z)]|[])+$)([^(0-9a-zA-Z)]|[]|[a-z]|[A-Z]|[0-9]){9,}$/;
 	if(!re2.test($(this).val()) && $(this).val()!=''){
 		$(this).next().css('display','block');
-		
+		$(this).next().html('至少包含数字/字母/字符两种组合 8-20位');
 	}
 
-})
-$('#pwd').focus(function(){
-		$(this).next().css('display','none');
-})
+	})
+	$('#pwd').focus(function(){
+			$(this).next().css('display','none');
+	})
+}
 
-
-$('#code').blur(function(){
+pwd();
+function chec(){
+	$('#code').blur(function(){
 	var msg=$('.yzm-spa').html();
-	if($(this).val()!=msg){
+	if($(this).val()!=msg && $(this).val()!=''){
 		$(this).next().css('display','block');
-		
+		$(this).next().html('验证码错误请重新输入');
 	}
 
-})
-$('#code').focus(function(){
-		$(this).next().css('display','none');
-})
+	})
+	$('#code').focus(function(){
+			$(this).next().css('display','none');
+	})
+}
 
+
+tel();
+chec();
+$('#agreen').click(function(){
+	if($('#agreen').prop('checked')){
+			$('.xy').css('display','none');
+		}
+})
 
 $('.btn').click(function(){
+		
 		if($('#re_form input').val()==''){
 			$('#tel').next().html('请输入手机号');
 			$('#tel').next().css('display','block');
-		}else if($('#tel').val()!=''){
+		}else if($('#tel').val()!='' && $('#pwd').val()==''){
+			$('#pwd').next().html('密码不能为空');
+			$('#pwd').next().css('display','block');
+		}else if($('#tel').val()!='' && $('#pwd').val()!='' && $('#code').val()==''){
+//			console.log($('#code').val());
 			$('#code').next().html('请输入验证码');
 			$('#code').next().css('display','block');
+		}else if($('#agreen').prop('checked')){
+			$('.xy').css('display','none');
+		}else if(!$('#agreen').prop('checked')){
+			$('.xy').css('display','block');
 		}
-		
-//		$('.xy').css('display','block');
 })
 
 
