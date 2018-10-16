@@ -6,6 +6,7 @@ $('.btn_1').click(function(){
 	$('.btn_2').css({'color':'#333','textDecoration':'none'})
 	$('.huan').css('display','none');
 //	$('#login_pwd').css('display','none');
+	
 })
 
 $('.btn_2').click(function(){
@@ -15,6 +16,7 @@ $('.btn_2').click(function(){
 	$('.btn_1').css({'color':'#333','textDecoration':'none'})
 	$('.huan').css('display','block');
 //	$('#login_pwd').css('display','none');
+	
 })
 
 $('.form_ form').find('input').not('.act_login').focus(function(){
