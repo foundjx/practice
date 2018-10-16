@@ -25,6 +25,8 @@ $('#re_form form').find('input').blur(function(){
 })
 
 //表单验证
+
+
 function tel(){
 	$('#tel').blur(function(){
 	var re1=/^1[3|5|7|8|]\d{9}$/;
@@ -76,6 +78,9 @@ $('#agreen').click(function(){
 			$('.xy').css('display','none');
 		}
 })
+
+
+
 
 $('.btn').click(function(){
 		

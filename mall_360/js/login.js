@@ -25,3 +25,6 @@ $('.form_ form').find('input').not('.act_login').focus(function(){
 $('.form_ form').find('input').not('.act_login').blur(function(){
 	$(this).css('border','1px solid #e6e6e6');
 })
+
+
+
