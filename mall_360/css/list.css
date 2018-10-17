@@ -1,0 +1,118 @@
+.list_wrap {
+  width: 100%;
+  height: 196px;
+  background: #fff; }
+
+#list_check {
+  height: 196px;
+  width: 90%;
+  margin: 0 auto;
+  background: #fff;
+  font-size: 14px;
+  color: #31373c; }
+  #list_check a {
+    color: #848484; }
+    #list_check a:hover {
+      color: #23ac38; }
+  #list_check em {
+    font-style: normal; }
+
+.li_ {
+  height: 48px;
+  border-bottom: 1px solid #e8e8e8;
+  line-height: 48px; }
+  .li_ .he {
+    font-size: 16px;
+    font-weight: 600; }
+  .li_ span {
+    margin-right: 35px; }
+
+.li_1 span {
+  margin-right: 4px; }
+
+#show_all {
+  width: 100%;
+  height: 1600px;
+  background: #f5f5f5;
+  overflow: hidden; }
+
+.shoplist {
+  width: 90%;
+  display: block;
+  margin: 40px auto;
+  height: 1400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.shoplist > li {
+  width: 236px;
+  height: 325px;
+  border: 1px solid #e4e4e4;
+  text-align: center;
+  float: left;
+  margin-bottom: 10px;
+  background: #fff; }
+  .shoplist > li:hover {
+    border: 1px solid #FC0D1B; }
+    .shoplist > li:hover .show_time {
+      display: block; }
+
+.shoplist > li img {
+  height: 150px;
+  display: inline-block;
+  margin-top: 30px; }
+
+.shoplist > li p {
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #000;
+  margin-top: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.shoplist > li span {
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #fc0d1b;
+  margin-top: 12px;
+  display: block; }
+
+.show_time {
+  width: 120px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  border: 1px solid #fc0d1b;
+  color: #FC0D1B;
+  margin: 16px auto;
+  cursor: pointer;
+  display: none; }
+  .show_time b {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    font-family: 'iconfont';
+    color: #fc0d1b; }
+  .show_time em {
+    position: absolute;
+    left: 38px;
+    top: 5px;
+    color: #fc0d1b;
+    font-size: 14px;
+    font-style: normal; }
+  .show_time:hover {
+    background: #FC0D1B; }
+    .show_time:hover b {
+      color: #fff; }
+    .show_time:hover em {
+      color: #fff; }
+
+/*# sourceMappingURL=list.css.map */

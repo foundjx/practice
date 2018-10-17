@@ -3,7 +3,656 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>360商城-列表</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/pagination.css"/>
 	</head>
 	<body>
+		<!--头部-->
+		<header id="header">
+			<div class="msg_wrap">
+				<!--登录注册收藏等-->
+				<div class="msg">
+					<ul>
+						<li class="topbox leftitem">
+							<a href="#">帮助中心</a>
+						</li>
+						<li class="topbox leftitem">
+							<a href="#">收藏本站</a>
+						</li>
+						<li class="topbox rightitem shop">
+							<a href="#">
+								<img class="movephone" src="img/1.PNG"/>
+							</a>
+							<a class="move_green" href="#">手机360商城</a>
+							<div id="down_pic">
+								<img src="img/qcode_app.jpg"/>
+								<span>手机360商城</span>
+								<span class="red">扫码下载</span>
+							</div>
+						</li>
+						<li class="topbox rightitem">
+							<a href="#">我的订单</a>
+						</li>
+						<li class="topbox rightitem re">
+							<a href="#">注册</a>
+						</li>
+						<li class="topbox rightitem login">
+							<a href="#">登录</a>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+			<!--logo,搜索，购物车-->
+			<div class="logo_wrap">
+				<div id="logo_search">
+					<!--logo-->
+					<h1><a href="#"><img class="logo" src="img/e99e333b-d3c0-4673-b86e-2ed6377a6972.png" alt="" /></a></h1>
+					<!--搜索-->
+					<div class="check">
+						<form action="" method="post" class="list">
+							<input type="text" name="" id="search" value="N7 pro新品"  />
+							<a href="javascript:;" class="btn">&#xe62d;</a>
+							<div id="shopping">
+								<a href="#" class="shop_car">
+									<b>&#xe60a;</b>
+									我的购物车
+									<span>(0)</span>
+								</a>
+								<div id="car_msg">
+									<span class="show">请 <a href="#">登录</a> 后查看您的购物车。</span>
+									<span class="wait">正在加载购物车. . .</span>
+								</div>
+							</div>
+						</form>
+						<p>
+							<a href="#">N7 pro</a>
+							<a href="#">N7</a>
+							<a href="#">儿童手表</a>
+							<a href="#">行车记录仪</a>
+							<a href="#">摄像机夜视版</a>
+						</p>
+					</div>
+					<!--二维码-->
+					<div class="mall_pic">
+						<b><img src="img/small.jpg"/></b>
+						<img src="img/qcode_app.jpg"/>
+					</div>
+					<!--导航-->
+					<div class="all">
+						<a href="#"><span>☰</span>全部智能酷品</a>
+					</div>
+					<ul class="nav">
+						<li><a href="#">手机
+							
+						</a>
+							<div id="" class="list_msg">
+								<div id="" class="phone_msg phone_msg1">
+									<!--<a href="#" class="p1">
+										<img src="img/p1.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 Pro 珊瑚红
+										<p>1799.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg phone_msg2">
+									<!--<a href="#" class="p1">
+										<img src="img/p2.jpg"/>
+									</a>
+									<a href="#"> 
+										 360手机 N7 Pro 玛瑙黑
+										<p>2099.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg phone_msg3">
+									<!--<a href="#" class="p1">
+										<img src="img/p3.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 Lite 幻影黑
+										<p>1199.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg phone_msg4">
+									<!--<a href="#" class="p1">
+										<img src="img/p4.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 月岩白色
+										<p>暂无报价</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg phone_msg5">
+									<!--<a href="#" class="p1">
+										<img src="img/p5.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 石墨黑色
+										<p>暂无报价</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg phone_msg6">
+									<!--<a href="#" class="p1 last_phone">
+										<img src="img/p6.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N6 璀璨金
+										<p>1199.00</p>
+									</a>-->
+								</div>
+							</div>
+						
+						</li>
+						<li><a href="#">行车记录仪</a>
+							<div id="" class="list_msg list_msg1">
+								<div id="" class="phone_msg movie_msg1">
+									<!--<a href="#" class="p1">
+										<img src="img/p1.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 Pro 珊瑚红
+										<p>1799.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg movie_msg2">
+									<!--<a href="#" class="p1">
+										<img src="img/p2.jpg"/>
+									</a>
+									<a href="#"> 
+										 360手机 N7 Pro 玛瑙黑
+										<p>2099.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg movie_msg3">
+									<!--<a href="#" class="p1">
+										<img src="img/p3.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 Lite 幻影黑
+										<p>1199.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg movie_msg4">
+									<!--<a href="#" class="p1">
+										<img src="img/p4.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 月岩白色
+										<p>暂无报价</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg movie_msg5">
+									<!--<a href="#" class="p1">
+										<img src="img/p5.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 石墨黑色
+										<p>暂无报价</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg movie_msg6">
+									<!--<a href="#" class="p1 last_phone">
+										<img src="img/p6.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N6 璀璨金
+										<p>1199.00</p>
+									</a>-->
+								</div>
+							</div>
+							
+						</li>
+						<li><a href="#">儿童手表</a>
+							<div id="" class="list_msg list_msg2">
+								<div id="" class="phone_msg w_msg1">
+									<!--<a href="#" class="p1">
+										<img src="img/p1.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 Pro 珊瑚红
+										<p>1799.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg w_msg2">
+									<!--<a href="#" class="p1">
+										<img src="img/p2.jpg"/>
+									</a>
+									<a href="#"> 
+										 360手机 N7 Pro 玛瑙黑
+										<p>2099.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg w_msg3">
+									<!--<a href="#" class="p1">
+										<img src="img/p3.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 Lite 幻影黑
+										<p>1199.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg w_msg4">
+									<!--<a href="#" class="p1">
+										<img src="img/p4.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 月岩白色
+										<p>暂无报价</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg w_msg5">
+									<!--<a href="#" class="p1">
+										<img src="img/p5.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 石墨黑色
+										<p>暂无报价</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg w_msg6">
+									<!--<a href="#" class="p1 last_phone">
+										<img src="img/p6.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N6 璀璨金
+										<p>1199.00</p>
+									</a>-->
+								</div>
+							</div>
+						</li>
+						<li><a href="#">摄像机</a>
+							<div id="" class="list_msg list_msg3">
+								<div id="" class="phone_msg s_msg1">
+									<!--<a href="#" class="p1">
+										<img src="img/p1.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 Pro 珊瑚红
+										<p>1799.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg s_msg2">
+									<!--<a href="#" class="p1">
+										<img src="img/p2.jpg"/>
+									</a>
+									<a href="#"> 
+										 360手机 N7 Pro 玛瑙黑
+										<p>2099.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg s_msg3">
+									<!--<a href="#" class="p1">
+										<img src="img/p3.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 Lite 幻影黑
+										<p>1199.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg s_msg4">
+									<!--<a href="#" class="p1">
+										<img src="img/p4.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 月岩白色
+										<p>暂无报价</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg s_msg5">
+									<!--<a href="#" class="p1">
+										<img src="img/p5.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 石墨黑色
+										<p>暂无报价</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg s_msg6">
+									<!--<a href="#" class="p1 last_phone">
+										<img src="img/p6.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N6 璀璨金
+										<p>1199.00</p>
+									</a>-->
+								</div>
+							</div>
+						</li>
+						<li><a href="#">路由器</a>
+							<div id="" class="list_msg list_msg4">
+								<div id="" class="phone_msg l_msg1">
+									<!--<a href="#" class="p1">
+										<img src="img/p1.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 Pro 珊瑚红
+										<p>1799.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg l_msg2">
+									<!--<a href="#" class="p1">
+										<img src="img/p2.jpg"/>
+									</a>
+									<a href="#"> 
+										 360手机 N7 Pro 玛瑙黑
+										<p>2099.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg l_msg3">
+									<!--<a href="#" class="p1">
+										<img src="img/p3.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 Lite 幻影黑
+										<p>1199.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg l_msg4">
+									<!--<a href="#" class="p1">
+										<img src="img/p4.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 月岩白色
+										<p>暂无报价</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg l_msg5">
+									<!--<a href="#" class="p1">
+										<img src="img/p5.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 石墨黑色
+										<p>暂无报价</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg l_msg6">
+									<!--<a href="#" class="p1 last_phone">
+										<img src="img/p6.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N6 璀璨金
+										<p>1199.00</p>
+									</a>-->
+								</div>
+							</div>
+						</li>
+						<li class="talk"><a href="#">社区</a></li>
+						<li><a href="#">扫地机器人</a>
+							<div id="" class="list_msg list_msg5">
+								<div id="" class="phone_msg r_msg1">
+									<!--<a href="#" class="p1">
+										<img src="img/p1.jpg"/>
+									</a>
+									<a href="#"> 
+										360手机 N7 Pro 珊瑚红
+										<p>1799.00</p>
+									</a>-->
+								</div>
+								
+								<div id="" class="phone_msg r_msg2">
+									<!--<a href="#" class="p1">
+										<img src="img/p2.jpg"/>
+									</a>
+									<a href="#"> 
+										 360手机 N7 Pro 玛瑙黑
+										<p>2099.00</p>
+									</a>-->
+								</div>	
+							</div>
+						</li>
+					</ul>
+					<div id="" class="gif">
+						<img  src="img/c24da133-0a0d-4113-b524-de21cfe15384.gif" alt="" />
+					</div>
+				</div>
+				
+			</div>
+		</header>
+		<!--列表选项-->
+		<div class="list_wrap">
+			<div id="list_check">
+				<div class="li_1 li_">
+					<span>
+						<a href="#">首页</a>
+						<em>&gt;</em>
+					</span>
+					<span>
+						<a href="#">全部搜索结果</a>
+						<em>&gt;</em>
+					</span>
+					<span>
+						<a href="#">手机/配件</a>
+						<em>&gt;</em>
+					</span>
+					<span>
+						<a href="#">手机通讯</a>
+						<em>&gt;</em>
+					</span>
+					<span class="he"> 全部</span>
+				</div>
+				<div class="li_2 li_">
+					<span class="first">分类:</span>
+					<span>
+						<a href="#">360 N6</a>
+					</span>
+					<span>
+						<a href="#">N7</a>
+					</span>
+					<span>
+						<a href="#">360 N6Pro</a>
+					</span>
+					<span>
+						<a href="#">N7pro</a>
+					</span>
+					<span>
+						<a href="#">N7lite</a>
+					</span>
+				</div>
+				<div class="li_3 li_">
+					<span class="first">品牌:</span>
+					<span>
+						<a href="#">360</a>
+					</span>
+				</div>
+				<div class="li_4 li_">
+					<span class="first">排序:</span>
+					<span>
+						<a href="#">默认</a>
+					</span>
+					<span>
+						<a href="#">价格</a>
+					</span>
+					<span>
+						<a href="#">销量</a>
+					</span>
+					<span>
+						<input type="checkbox" name="" id="" value="" />
+						<a href="#">仅看有货产品</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!--列表物品-->
+		<div id="show_all">
+			<ul class="shoplist clearfix" id="main">
+				
+			</ul>
+			<div class="M-box4">
+				
+			</div>	
+		</div>
+		<!--右侧二维码-->
+		<div id="" class="small_gray">
+			<div class="gray_ gray_1">
+				<img src="img/lswechat.png"/>
+				<div id="" class="gray_show1">
+					<img src="img/t01d06b994b8798623c.jpg"/>
+					<p>扫码关注官方微信</p>
+					<p>先人一步知晓促销活动</p>
+				</div>
+			</div>
+			<div  class="gray_ gray_2">
+				<img src="img/lsstore.png"/>
+				<div id="" class="gray_show2">
+					<img src="img/qcode_app.jpg"/>
+					<p>下载客户端</p>
+				</div>
+			</div>
+			<div  class="gray_ gray_3">
+				<img src="img/totopnew.png"/>
+			</div>
+		</div>
+			
+			<!--底部-->
+		<div id="footer">
+			<div class="footer_first">
+				<div id="">
+					<div id="">
+						7
+					</div>
+					<p>7天无理由退货</p>
+				</div>
+				<div id="" class="change">
+					<div id="">
+						15
+					</div>
+					<p>质量问题15天换货</p>
+				</div>
+				<div id="" class="bag">
+					<div id="">
+						包
+					</div>
+					<p>满99元包邮</p>
+				</div>
+			</div>
+			<div class="footer_second">
+				<div id="">
+					<h4>帮助中心</h4>
+					<ul>
+						<li><a href="#">用户登录与密码找回</a></li>
+						<li><a href="#">用户注册协议</a></li>
+						<li><a href="#">购买指南</a></li>
+						<li><a href="#">支付方式</a></li>
+						<li><a href="#">配送与说明</a></li>
+						<li><a href="#">用户注销</a></li>
+					</ul>
+				</div>
+				<div id="" class="back">
+					<h4>售后服务</h4>
+					<ul>
+						<li><a href="#">7日无理由退货</a></li>
+						<li><a href="#">质量问题15日内换货</a></li>
+						<li><a href="#">保修条款</a></li>
+						<li><a href="#">售后服务运费规则</a></li>
+					</ul>
+				</div>
+				<div id="" class="back">
+					<h4>联系我们</h4>
+					<p class="num">400-6822-360</p>
+					<p>周一至周日 9:00-18:00</p>
+					<p class="num">400-0111-366（手机类产品）</p>
+					<p>周一至周日 9:00-21:00</p>
+					<p>（仅收市话费）</p>
+				</div>
+				<div id="" class="mark">
+					<div id="">
+						<img class="small" src="img/weixin_icon.png" alt="" />
+						<img class="wx" src="img/t01d06b994b8798623c.jpg"/>
+					</div>
+					<div id="">
+						<a href="#"><img class="small" src="img/weibo_icon.png" alt="" /></a>
+						<a href="#"><img class="wb" src="img/wbewm.jpg"/></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer_third">
+				360商城©2013-2018 360公司版权所有 京ICP备17017089号 京公网安备11000002000006号
+			</div>
+		</div>
 	</body>
 </html>
+<script src="js/jquery.min.js"></script>
+<script src="js/public.js"></script>
+<script src="js/main.js"></script>
+<script src="js/js.js"></script>
+<script src="js/jquery.pagination.js"></script>
+<script type="text/javascript">
+	var index=1;
+	var num=20;
+	$.ajax({
+		type:"get",
+		url:"data.json",
+		async:true,
+		success:function(arr){
+			page(arr,index);
+			var all=Math.ceil(arr.length/num);
+			$('.M-box4').pagination({
+				pageCount:all,
+				keepShowPN:true,
+				callback:function(api){
+					index=api.getCurrent();
+					$.getJSON("data.json",function(arr){
+						page(arr,index);	
+					})
+				}
+			})
+		}
+	});
+	
+	function page(arr,index){
+		var str="";
+			for(var i=(index-1)*num;i<index*num;i++){
+				var pro=arr[i];
+				if(i<arr.length){
+					str+=`
+						<li>
+							<a href="#">
+								<img src="img/${pro.src}" />
+							</a>
+							<a href="#">
+								<p>${pro.name}</p>
+							</a>
+							<a href="#">
+								<span>${pro.price}</span>
+							</a>
+							<div class="show_time">
+								<em>${pro.shop}</em>
+								<b>${pro.car}</b>
+							</div>
+						</li>
+					`;
+				}
+			}
+			$('#main').html(str);
+	}
+	
+</script>
