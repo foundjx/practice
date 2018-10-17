@@ -7,6 +7,7 @@
     text-align: center;
   	zoom: 1;
   	margin-left:555px;
+  	margin-bottom: 50px;
 }
 .M-box:before,.M-box:after,.M-box1:before,.M-box1:after ,.M-box2:before,.M-box2:after ,.M-box3:before,.M-box3:after,.M-box4:before,.M-box4:after{
     content:"";
