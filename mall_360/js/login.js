@@ -41,6 +41,7 @@ $('.act_login').click(function(){
 				location.href='index.html';
 			}else{
 				console.log('err');
+				alert('密码错误请重新输入！');
 			}
 		}
 	}
