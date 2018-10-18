@@ -28,3 +28,20 @@ $('.form_ form').find('input').not('.act_login').blur(function(){
 
 
 
+$('.act_login').click(function(){
+	var arr=document.cookie.split(';');
+//	console.log(arr);
+	for(var i=0,len=arr.length;i<len;i++){
+		var list=arr[i].split('=');
+//		console.log(list);
+		var obj=eval('('+list[1]+')');
+		console.log(obj.tel)
+		if(obj.tel==$('#login_tel').val()){
+			if(obj.pw==$('#login_pwd').val()){
+				location.href='index.html';
+			}else{
+				console.log('err');
+			}
+		}
+	}
+})

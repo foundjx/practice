@@ -26,13 +26,16 @@ $('#re_form form').find('input').blur(function(){
 
 //表单验证
 
-
+var flag=true;
 function tel(){
 	$('#tel').blur(function(){
 	var re1=/^1[3|5|7|8|]\d{9}$/;
 	if(!re1.test($(this).val()) && $(this).val()!=''){
 		$(this).next().css('display','block');
 		$(this).next().html('手机号格式有误');
+		flag=false;
+	}else{
+		flag=true;
 	}
 	})
 	$('#tel').focus(function(){
@@ -43,10 +46,13 @@ function tel(){
 
 function pwd(){
 	$('#pwd').blur(function(){
-	var re2=/^(?![0-9]+$)(?![a-z]+$)(?![A-Z]+$)(?!([^(0-9a-zA-Z)]|[])+$)([^(0-9a-zA-Z)]|[]|[a-z]|[A-Z]|[0-9]){9,}$/;
+	var re2=/^(?![0-9]+$)(?![a-z]+$)(?![A-Z]+$)(?!([^(0-9a-zA-Z)]|[])+$)([^(0-9a-zA-Z)]|[]|[a-z]|[A-Z]|[0-9]){8,}$/;
 	if(!re2.test($(this).val()) && $(this).val()!=''){
 		$(this).next().css('display','block');
 		$(this).next().html('至少包含数字/字母/字符两种组合 8-20位');
+		flag=false;
+	}else{
+		flag=true;
 	}
 
 	})
@@ -62,6 +68,9 @@ function chec(){
 	if($(this).val()!=msg && $(this).val()!=''){
 		$(this).next().css('display','block');
 		$(this).next().html('验证码错误请重新输入');
+		flag=false;
+	}else{
+		flag=true;
 	}
 
 	})
@@ -99,6 +108,18 @@ $('.btn').click(function(){
 		}else if(!$('#agreen').prop('checked')){
 			$('.xy').css('display','block');
 		}
+		console.log(flag);
+		if(flag){
+			var date=new Date();
+			date.setDate(date.getDate()+7);
+//"key"+'='  +   '{"tel":" '+$('#tel').val()+'  ","pw":"   '+$('#pwd').val()+'      "}'   +';expires='+date+';path=/';
+			document.cookie="key"+'='+'{"tel":"'+$('#tel').val()+'","pw":"'+$('#pwd').val()+'"}'+';expires='+date+';path=/';
+//			location.href='login.html';
+			console.log(document.cookie);
+			console.log('success');
+		}
+		console.log(document.cookie);
+		
 })
 
 
