@@ -27,7 +27,7 @@ $('.form_ form').find('input').not('.act_login').blur(function(){
 })
 
 
-
+var num_;
 $('.act_login').click(function(){
 	var arr=document.cookie.split(';');
 //	console.log(arr);
@@ -35,8 +35,10 @@ $('.act_login').click(function(){
 		var list=arr[i].split('=');
 //		console.log(list);
 		var obj=eval('('+list[1]+')');
-		console.log(obj.tel)
+//		console.log(obj.tel)
 		if(obj.tel==$('#login_tel').val()){
+			num_=obj.tel;
+//			console.log('pw:'+num_);
 			if(obj.pw==$('#login_pwd').val()){
 				location.href='index.html';
 			}else{

@@ -145,15 +145,21 @@
   margin-bottom: 10px; }
 
 .xuan_1 {
-  position: relative; }
+  position: relative;
+  margin-bottom: 44px; }
   .xuan_1 .pei {
     display: inline-block;
     cursor: pointer;
-    margin-bottom: 44px; }
+    height: 20px;
+    line-height: 20px;
+    width: 200px; }
     .xuan_1 .pei i {
       font-style: normal;
       font-size: 14px;
-      color: #575ea7; }
+      color: #575ea7;
+      margin-left: 6px;
+      text-indent: 10px;
+      z-index: 10001; }
     .xuan_1 .pei b {
       width: 0;
       height: 0;
@@ -162,8 +168,64 @@
       border-right: 4px solid #fff;
       border-bottom: 4px solid #fff;
       border-top: 4px solid #666;
-      margin-left: 0;
-      margin-bottom: 0; }
+      margin-left: 6px;
+      margin-bottom: 0;
+      margin-right: 6px; }
+  .xuan_1 .place {
+    position: absolute;
+    left: 0;
+    top: 93px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    background: #fff;
+    width: 442px;
+    min-height: 122px;
+    border: 1px solid #ccc;
+    display: none;
+    margin-top: -1px;
+    z-index: 10000; }
+    .xuan_1 .place img {
+      position: absolute;
+      right: 10px;
+      cursor: pointer; }
+    .xuan_1 .place h1 {
+      display: block;
+      height: 24px;
+      border-bottom: 1px solid #82c92f; }
+      .xuan_1 .place h1 div {
+        float: left;
+        border: 1px solid #ccc;
+        border-bottom: 0;
+        font-size: 12px;
+        height: 24px;
+        line-height: 14px;
+        box-sizing: border-box;
+        padding: 5px 8px;
+        margin-right: 6px;
+        cursor: pointer;
+        color: #3c3c3c; }
+    .xuan_1 .place .show_place {
+      min-height: 65px;
+      font-size: 16px;
+      box-sizing: border-box;
+      padding-left: 5px;
+      background: #fff; }
+      .xuan_1 .place .show_place .p_p {
+        margin-top: 14px;
+        margin-right: 10px;
+        margin-bottom: -6px;
+        float: left;
+        color: #333;
+        height: 20px;
+        box-sizing: border-box;
+        padding: 0 10px;
+        line-height: 20px;
+        cursor: pointer; }
+        .xuan_1 .place .show_place .p_p:hover {
+          color: #fff;
+          background: #82c92f; }
+    .xuan_1 .place .show_place2, .xuan_1 .place .show_place3 {
+      display: none; }
 
 .xuan_2 .discheck {
   border: 1px solid #ccc;
